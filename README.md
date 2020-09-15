@@ -1,9 +1,9 @@
 # IoT weekly report 2
 
 
-[2020-09-10]Kept reading the book and seek the learning resource of Python and IoT from the Internet.
+[2020-09-11]Kept reading the book and seek the learning resource of Python and IoT from the Internet.
 
-[2020-09-09]Tried to link the Raspberry Pi to Windows 10 and establish a platform for myself to learn Python..
+[2020-09-10]Tried to link the Raspberry Pi to Windows 10 and establish a platform for myself to learn Python..
 
 [2020-09-07]There was no class this week, so I started self learning with the third part of the book:Internet of Things Strategic Research and Innovation Agenda. Through the reading, things were getting abstruse.
 
