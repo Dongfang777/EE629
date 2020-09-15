@@ -9,7 +9,7 @@
 
 
 
-# IoT weekly report 
+# IoT weekly report 1 
 
 
 [2020-09-04]Read the first and second chapter of book 'Internet of Things-From Research and Innovation to Market Deployment', studied the basic knowledge of course and tried to prepare for further learning.
