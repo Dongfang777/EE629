@@ -1,3 +1,15 @@
+# IoT weekly report 3
+
+
+[2020-09-15]Learned the basic knowledge about Iot, continued to review after class.
+
+[2020-09-16]Got the Raspberry Pi, tried to install the rasbian into it, run a code on it.
+
+[2020-09-17]There was still a lot of problems about Raspberry Pi, kept surfing the Internet to find the solutions.  
+
+
+
+
 # IoT weekly report 2
 
 
@@ -19,3 +31,4 @@
 [2020-09-01]Learned about the Raspberry Pi from the Internet and searched in the market to buy one, watching the staff perform its function and the way to use for me. 
 
 [2020-08-31]Took the first class of Internet of Things, met the teacher Mr.Lu, had a preliminary understanding of the main content that this course is really teaching about.
+
