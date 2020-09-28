@@ -1,3 +1,13 @@
+# IoT weekly report 4
+
+
+[2020-09-22]Started to read the third chapter of the reference book, 'Internet of Things Strategic Research and Innovation Agenda', and learned ahout the IoT Smart-X Application.
+
+[2020-09-23]kept studying the Raspberry Pi, trying to figure out the code and application problem.
+
+[2020-09-24]Practised writing Python Code to improve my program writing ability.
+
+
 # IoT weekly report 3
 
 
