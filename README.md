@@ -1,5 +1,14 @@
 # IoT weekly report 4
 
+[2020-09-29] Continued reading the third chapter of reference book. Have got to 3.6.1'Processes:Adaptive and Event-Driven Processes.'
+
+[2020-09-30] Watched the Python introductory course, kept learning basic knowledge of Python.
+
+[2020-10-01] Practiced writing Python Code to improve my program writing ability.
+
+
+# IoT weekly report 4
+
 [2020-09-22] Started to read the third chapter of the reference book, 'Internet of Things Strategic Research and Innovation Agenda,' and learned ahout the IoT Smart-X Application.
 
 [2020-09-23] Kept studying the Raspberry Pi, trying to figure out the code and application problem.
