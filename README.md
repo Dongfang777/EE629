@@ -1,10 +1,10 @@
 # IoT weekly report 4
 
-[2020-09-29] Continued reading the third chapter of reference book. Have got to 3.6.1'Processes:Adaptive and Event-Driven Processes.'
+[2020-09-29] Continued reading the third chapter of reference book. Have got to 3.6.1 'Processes:Adaptive and Event-Driven Processes.'
 
 [2020-09-30] Watched the Python introductory course, kept learning basic knowledge of Python.
 
-[2020-10-01] Practiced writing Python Code to improve my program writing ability.
+[2020-10-01] Practiced writing Python code to improve my program writing ability.
 
 
 # IoT weekly report 4
