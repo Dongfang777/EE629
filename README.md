@@ -1,3 +1,12 @@
+# IoT weekly report 6
+
+[2020-10-05] There was something wrong with the Raspberry Pi: One red LED turned on. Then I checked it and seek the solutions on the Internet, finally found out that the supply voltage is abnormal. I replaced the charger and it soon become normal.
+
+[2020-10-07] Continued reading the third chapter of reference book. Have got to 3.7.3 'Semantic Sensor Networks and Semantic Annotation of data.'
+
+[2020-10-08] Watched lessons from Bilibili, kept practicing my programming ability and got familiar with the code.
+
+
 # IoT weekly report 5
 
 [2020-09-29] Continued reading the third chapter of reference book. Have got to 3.6.1 'Processes:Adaptive and Event-Driven Processes.'
