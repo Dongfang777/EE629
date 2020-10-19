@@ -1,6 +1,15 @@
+# IoT weekly report 7
+
+[2020-10-13] Continued reading the third chapter of reference book. Have got to 3.9.3 'Future Trends and Recommendations.'
+
+[2020-10-15] Registered an account on the CSDN forum(a forum for the Chinese professional developers), https://www.csdn.net/, and watched Python module to learn more from the experienced users about Python programming.
+
+[2020-10-16] Tried to Log in to Raspberry Pi remotely using the SSH tool with the help of Raspberry Pi handbook. Somehow it didn't work, I checked it for multiple times and changed the password but it still can't be woke up. Somthing went wrong and I will figure it out later. 
+
+
 # IoT weekly report 6
 
-[2020-10-05] There was something wrong with the Raspberry Pi: One red LED turned on. Then I checked it and seek the solutions on the Internet, finally found out that the supply voltage is abnormal. I replaced the charger and it soon become normal.
+[2020-10-05] There was something wrong with the Raspberry Pi: One red LED turned on. Then I checked it and seek the solutions on the internet, finally found out that the supply voltage is abnormal. I replaced the charger and it soon become normal.
 
 [2020-10-07] Continued reading the third chapter of reference book. Have got to 3.7.3 'Semantic Sensor Networks and Semantic Annotation of data.'
 
