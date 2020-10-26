@@ -1,3 +1,12 @@
+# IoT weekly report 8
+
+[2020-10-21] Watch the IoT tutorial video on Bilibili, https://www.bilibili.com/video/BV1rx411X7xo?from=search&seid=6741091868703443567
+
+[2020-10-22] Continued reading the third chapter of reference book. Have got to 3.11.1 'Message Queue Telemetry Transport(MQTT).'
+
+[2020-10-23] Tried to solve some Python problems proposed by other users on CSDN to practise my Python programming ability.
+
+
 # IoT weekly report 7
 
 [2020-10-13] Continued reading the third chapter of reference book. Have got to 3.9.3 'Future Trends and Recommendations.'
