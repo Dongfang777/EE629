@@ -2,7 +2,7 @@
 
 [2020-10-26] Continued reading the third chapter of reference book. Have got to 3.11.7 'Extensible Messaging and Presence Protocol(XMPP).'
 
-[2020-10-28] Joint the Wechat Group of CSDN developers to make direct communication with excellent Python users, asked them about the error I had met in daily Python use.
+[2020-10-28] Joint the Wechat group of CSDN developers to make direct communications with excellent Python users, asked them about the errors I had met in daily Python use.
 
 [2020-10-29] Started to prepare for the final project for IoT: Search some IoT porjects on the internet and review them, trying to get some ideas about the frame of my own project.
 
