@@ -4,7 +4,7 @@
 
 [2020-11-05] Continued reading the fourth chapter of reference book. Have got to 4.1.2 'Internet of Things Global Standardisation-State of Play: IoT Drivers.'
 
-[2020-10-06] Watched the face recoginition project on CSDN, gained experience from other developers.
+[2020-10-06] Watched the face recoginition projects on CSDN, gained experience from other developers.
 
 
 # IoT weekly report 9
