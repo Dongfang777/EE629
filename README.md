@@ -1,8 +1,8 @@
 # IoT weekly report 10
 
-[2020-11-04] Repeated operations of professors on the class through zoom video, run Python code on Raspberry Pi.
+[2020-11-04] Repeated operations of professor Lu on the class through zoom video, to run these Python codes fluently on Raspberry Pi.
 
-[2020-11-05] Continued reading the third chapter of reference book. Have got to 4.1.2 'Internet of Things Global Standardisation-State of Play: IoT Drivers.'
+[2020-11-05] Continued reading the fourth chapter of reference book. Have got to 4.1.2 'Internet of Things Global Standardisation-State of Play: IoT Drivers.'
 
 [2020-10-06] Watched the face recoginition project on CSDN, gained experience from other developers.
 
