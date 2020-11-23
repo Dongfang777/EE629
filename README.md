@@ -1,3 +1,11 @@
+# IoT weekly report 11
+
+[2020-11-16] Continued reading the fourth chapter of reference book. Have got to 4.4.1 'IERC Research Projects Positions: BETaaS Advisory Board Experts Position.'
+
+[2020-11-17] Determined the theme of IoT project:Intelligent Environment Monitering, reviewed the previous project of other developers on the internet.
+
+[2020-11-18] Practiced the Python programming ability by following the reference book of Python.
+
 # IoT weekly report 10
 
 [2020-11-04] Repeated operations of professor Lu on the class through zoom video, to run these Python codes fluently on Raspberry Pi.
