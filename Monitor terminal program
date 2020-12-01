@@ -1,0 +1,221 @@
+#include "sys.h"
+#include "sysitck.h"
+#include "led.h"
+#include "nrf24l01.h"
+#include "adc.h"
+#include "OLED_I2C.h"
+#include "beep.h"
+#include "bsp_adc.h"
+#include "bsp_GeneralTim.h" 
+#include "key.h"
+#define uint unsigned int
+#define uchar unsigned char
+void num_char(uint x);
+
+uchar adc1_num[ ]="12345";
+uint ADC_ConvertedValueLocal[NOFCHANEL];  
+extern __IO uint16_t ADC_ConvertedValue[NOFCHANEL];
+char *reverse(char *s)
+{
+    char temp;
+    char *p = s;    //p指向s的头部
+    char *q = s;    //q指向s的尾部
+    while(*q)
+        ++q;
+    q--;
+    
+    //交换移动指针，直到p和q交叉
+    while(q > p)
+    {
+        temp = *p;
+        *p++ = *q;
+        *q-- = temp;
+    }
+    return s;
+}
+// //检测到的传感器ID存数
+int main(void)
+{ 
+  char *string = my_itoa(12700);
+ uchar TEMP[]="TEMP:";/*温度 ℃*/
+ uchar HUM[]="HUM:";  /*湿度 %Rh*/
+ uchar CDQ[]="CDQ:";    /*光强 lux*/
+ uchar SHUM[]="SHUM:";/*土壤水分 %*/
+ uchar PSI[]="PSI:";/*空气质量 ppm*/
+ uchar RCD[]="RCD:";/*雨情 mm*/
+  int adc_A5_i,adc_A7_i,adc_B0_U,adc_B1_U;
+ int duty_set=10,fre_set=100;
+ int m=0;//节点数
+ int i=0;
+ int T=0;
+ u8 rx_buf[40];
+  u16 TEMP1=0,HUM1=0,CDQ1=0,SHUM1=0,PSI1=0,RCD1=0;//
+ u16 TEMP2=0,HUM2=0,CDQ2=0,SHUM2=0,PSI2=0,RCD2=0;//
+  SystemInit();
+ NVIC_PriorityGroupConfig(NVIC_PriorityGroup_2);
+ LED_GPIO_Config();
+  Key_GPIO_Config();
+ NRF24L01_Init();
+ adc_init();
+ I2C_Configuration();
+ OLED_Init();
+ OLED_Fill(0xFF);
+ delay_ms(1000);
+ OLED_Fill(0x00);
+  while(NRF24L01_Check())  //检测NRF24L01是否存在
+ {
+  GPIO_SetBits(GPIOC,GPIO_Pin_13); 
+  OLED_ShowStr(0,1,(unsigned char*)"NRF Error",1);
+  OLED_ShowStr(0,2,(unsigned char*)"Please chect NRF",1);
+ }
+  while(1)
+ { 
+ // key_scan();
+  
+  digitalToggle(LED3_GPIO_PORT,LED3_GPIO_PIN);
+  delay_ms(10);
+  digitalToggle(LED2_GPIO_PORT,LED2_GPIO_PIN);
+      第一节点环境信息接收///
+   TEMP1=rx_buf[0]<<8|rx_buf[1];//温度
+   HUM1=rx_buf[2]<<8|rx_buf[3];//湿度
+   CDQ1=rx_buf[4]<<8|rx_buf[5];//光照强度
+   SHUM1=rx_buf[6]<<8|rx_buf[7];//土壤水分
+   PSI1=rx_buf[8]<<8|rx_buf[9];//空气质量
+   RCD1=rx_buf[10]<<8|rx_buf[11];//雨情
+  第二节点环境信息接收///
+   TEMP2=rx_buf[0]<<8|rx_buf[1];//温度
+   HUM2=rx_buf[2]<<8|rx_buf[3];//湿度
+   CDQ2=rx_buf[4]<<8|rx_buf[5];//光照强度
+   SHUM2=rx_buf[6]<<8|rx_buf[7];//土壤水分
+   PSI2=rx_buf[8]<<8|rx_buf[9];//空气质量
+   RCD2=rx_buf[10]<<8|rx_buf[11];//雨情
+        if(TEMP1>30|TEMP2>30)
+   {
+    BEEP_Init();
+    Sound(50);
+   }
+   if(HUM1>70|HUM2>70)
+   {
+    BEEP_Init();
+    Sound(50);
+   }
+     if(m==0)
+ {
+     for(i=0;i<6;i++)
+  {
+   OLED_ShowCN(18+i*16,0,i);//个人信息
+  }
+     for(i=0;i<4;i++)
+  {
+   OLED_ShowCN1(26+i*16,2,i);//
+  }
+    for(i=0;i<3;i++)
+  {
+   OLED_ShowCN2(36+i*16,4,i);//
+  }
+  OLED_ShowStr(24,6,"1605260141",2);
+ }
+    //第一个节点环境信息
+ if(m==1) 
+ {  
+  
+  NRF24L01_RX_Mode();
+  ///温度显示// 
+  string = my_itoa(TEMP1);
+  OLED_ShowStr(0,0,TEMP,1);
+  OLED_ShowStr(40,0,string,1);
+  OLED_ShowCN3(90, 0, 0);
+     ///湿度显示// 
+   string = my_itoa(HUM1);
+  OLED_ShowStr(0,1,HUM,1);
+  OLED_ShowStr(40,1,string,1);
+  OLED_ShowStr(90,1,"%Rh",1);
+  
+  
+   ///光照强度显示//   
+  string = my_itoa(CDQ1);
+  OLED_ShowStr(0,2,CDQ,1);
+  OLED_ShowStr(40,2,string,1);
+  OLED_ShowStr(90,2,"lux",1);
+     ///土壤水分显示//
+   string = my_itoa((32991-SHUM1)/32991.0*100);//32991：最干燥（32991-采集值）/32991=水分 %值显示
+  OLED_ShowStr(0,3,SHUM,1);
+  OLED_ShowStr(40,3,string,1);
+  OLED_ShowStr(90,3,"%",1);
+  
+   ///空气质量显示//  
+  
+   string = my_itoa(990/32991.0*PSI1);                  //32991:最大采集电压   10-1000ppm   990/32991*采集电压值=  ppm
+  OLED_ShowStr(0,4,PSI,1);
+  OLED_ShowStr(40,4,string,1);
+  OLED_ShowStr(90,4,"ppm",1);
+  
+   ///雨情显示//
+  string = my_itoa((32991-RCD1)/32991.0*100);//32991：未下雨   （32991-采集值）/32991=雨情 %值显示
+  OLED_ShowStr(0,5,RCD,1);
+  OLED_ShowStr(40,5,string,1);
+  OLED_ShowStr(90,5,"mm",1);
+  
+  OLED_ShowStr(25,6,"First node",2);
+ }
+   //第二个节点环境信息
+  if(m==2) 
+ {  
+  
+  NRF24L01_RX_Mode1();
+  ///温度显示// 
+  string = my_itoa(TEMP2);
+  OLED_ShowStr(0,0,TEMP,1);
+  OLED_ShowStr(40,0,string,1);
+    OLED_ShowCN3(90, 0, 0);
+  
+   ///湿度显示// 
+   string = my_itoa(HUM2);
+  OLED_ShowStr(0,1,HUM,1);
+  OLED_ShowStr(40,1,string,1);
+  OLED_ShowStr(90,1,"%Rh",1);
+  
+  
+   ///光照强度显示//   
+  string = my_itoa((CDQ2));
+  OLED_ShowStr(0,2,CDQ,1);
+  OLED_ShowStr(40,2,string,1);
+  OLED_ShowStr(90,2,"lux",1);
+  
+   ///土壤水分显示//
+   string = my_itoa((32991-SHUM2)/32991.0*100);
+  OLED_ShowStr(0,3,SHUM,1);
+  OLED_ShowStr(40,3,string,1);
+  OLED_ShowStr(90,3,"%",1);
+  
+   ///空气质量显示//  
+  
+   string = my_itoa(990/32991.0*PSI2);
+  OLED_ShowStr(0,4,PSI,1);
+  OLED_ShowStr(40,4,string,1);
+  OLED_ShowStr(90,4,"ppm",1);
+  
+  
+   ///雨情显示//
+  string = my_itoa((32991-RCD2)/32991.0*100);
+  OLED_ShowStr(0,5,RCD,1);
+  OLED_ShowStr(40,5,string,1);
+  OLED_ShowStr(90,5,"mm",1);
+  
+  OLED_ShowStr(25,6,"Second node",2);
+ }
+     if(GPIO_ReadInputDataBit(GPIOA,GPIO_Pin_6)==0)
+   {
+    delay_ms(20);
+   if(GPIO_ReadInputDataBit(GPIOA,GPIO_Pin_6)==0)
+     m++;
+   if(m>2)m=1;
+   OLED_Fill(0x00);
+   while(!GPIO_ReadInputDataBit(GPIOA,GPIO_Pin_6));
+   }
+         if(NRF24L01_RxPacket(rx_buf)==0) 
+         {
+         GPIO_ResetBits(GPIOC,GPIO_Pin_13);
+         }
+         }
+         }
