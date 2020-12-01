@@ -1,5 +1,10 @@
 # IoT weekly report 11
 
+[2020-11-23] Worked on my final projcet with the start of reviewing others' projects. Then I decided to use DS18B20 temperature sensor and STM32F103C8T6 microcontroller as my hardware to finish my project. I used to use them in my school and I could get them easily, but now it's hard for me to get them because of graduation. I'm still working on renting them, if could not, I will buy them. Once I get the equipment, I'll complete the code and handle the project.
+
+
+# IoT weekly report 11
+
 [2020-11-16] Continued reading the fourth chapter of reference book. Have got to 4.4.1 'IERC Research Projects Positions: BETaaS Advisory Board Experts Position.'
 
 [2020-11-17] Determined the theme of IoT project: Intelligent Environment Monitering, reviewed the previous project of other developers on the internet.
