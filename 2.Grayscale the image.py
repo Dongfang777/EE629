@@ -5,3 +5,6 @@ cv.imshow('gray_img',gray_img)
 cv.imwrite('gray_lena.jpg',gray_img)
 cv.waitKey(0)
 cv.destroyAllWindows()
+
+
+
