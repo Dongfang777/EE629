@@ -8,3 +8,5 @@ cv.imshow('read_img',img)
 cv.waitKey(3000)
 # Free memory
 cv.destroyAllWindows()
+
+
