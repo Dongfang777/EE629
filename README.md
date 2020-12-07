@@ -3,21 +3,35 @@
 [2020-12-01] Failed to rent the hardware form school lab for environment monitering, thus I have to focus on my only project: Face Recognition.  
 
 [2020-12-02] Finished practicing Lab 10
+
 10A
+
 Hash function with randomization.
+
 SHA-2 Secure Hash Algorithm.
+
 Build the tiniest blockchain in less than 50 lines of Python by Gerald Nash.
+
 Python blockchain app by Satwik Kansal.
 
 Lab 10B: IOTA
+
 PyOTA (IOTA Python Client Library) and IRI (IOTA Reference Implementation).
+
 Send DHT11 sensor data to the IOTA Tangle using Masked Authenticated Messaging (MAM) by Robert Lie.
+
 Download and build the C library for BCM2835.
+
 Clone the code repository.
+
 Change nodes.testnet.iota.org to nodes.devnet.iota.org.
+
 Transactions in the Devnet must use a minimum weight magnitude (MWM) of 9 to be valid.
+
 Edit mam.client.js with ^W to search mwm and change it from 14 to 9 in Line 23375.
+
 Change sensor type from DHT11 to DHT22 and GPIO pin from 4 to 24 (The sensor is required).
+
 
 
 # IoT weekly report 12
