@@ -2,7 +2,7 @@
 
 [2020-12-01] Failed to rent the hardware form school lab for environment monitering, thus I have to focus on my only project: Face Recognition.  
 
-[2020-12-02] Finished practicing Lab 10
+[2020-12-02] Finished Lab 10
 
 10A
 
