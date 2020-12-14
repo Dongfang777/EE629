@@ -2,7 +2,7 @@
 
 [2020-12-08] Succeeded running my code to implement face recognition and adjust parameter to keep the accuracy.
 
-[2020-12-08] Finish Lab 9: NETCONF and YANG
+[2020-12-09] Finish Lab 9: NETCONF and YANG
 
 Lab 9A: YANG (Yet Another Next Generation)
 Install and run pyang on a Raspberry Pi
@@ -20,6 +20,35 @@ IBM Quantum Lab Qiskit Tutorials include a core reference set of notebooks outli
 Alternatively on macOS, install Qiskit and copy and save API token from the account, and run examples
 
 Open Git Bash on Windows, install Qiskit, and copy and save API token from the account, and run examples
+
+[2020-12-10] Finish Lab 8: Data Analysis
+
+Lab 8A: Examples
+On Windows, open Git Bash and install Python packages as follows
+
+On macOS/Linux, open a terminal and install Python packages as follows
+
+On Raspberry Pi, open a terminal and install Python packages as follows
+
+Enable X11 forwarding with SSH -Y on a PC to run code on Raspberry Pi without VNC Viewer
+For Windows, download and install Xming, and open Git Bash
+
+For macOS, download and install XQuartz, and open a terminal
+
+For Linux (most distributions have the X server installed), open a terminal
+
+Run Python code
+
+Lab 8B: Data Analysis
+Histograms, box plots, regression, and classification
+
+Cross-validation
+
+Keras and TensorFlow
+
+Deep learning project in Python with Keras
+
+Titanic example
 
 
 # IoT weekly report 13
