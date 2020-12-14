@@ -2,11 +2,24 @@
 
 [2020-12-08] Succeeded running my code to implement face recognition and adjust parameter to keep the accuracy.
 
-[2020-12-08] Finish Lab 8
+[2020-12-08] Finish Lab 9: NETCONF and YANG
 
+Lab 9A: YANG (Yet Another Next Generation)
+Install and run pyang on a Raspberry Pi
 
+Install PlantUML on a laptop or Raspberry Pi
 
+Run PlantUML to create a sequence diagram in PNG
 
+Install and run GIMP and Pinta to display a PNG file via VNC Viewer
+
+Lab 9B: Qiskit
+Learn quantum computation using Qiskit: textbook
+Create an IBM Quantum Experience account
+IBM Quantum Lab Qiskit Tutorials include a core reference set of notebooks outlining the features of Qiskit
+Alternatively on macOS, install Qiskit and copy and save API token from the account, and run examples
+
+Open Git Bash on Windows, install Qiskit, and copy and save API token from the account, and run examples
 
 
 # IoT weekly report 13
