@@ -1,3 +1,14 @@
+# IoT weekly report 14
+
+[2020-12-08] Succeeded running my code to implement face recognition and adjust parameter to keep the accuracy.
+
+[2020-12-08] Finish Lab 8
+
+
+
+
+
+
 # IoT weekly report 13
 
 [2020-12-01] Failed to rent the hardware form school lab for environment monitering, thus I have to focus on my only project: Face Recognition.  
@@ -36,7 +47,7 @@ Change sensor type from DHT11 to DHT22 and GPIO pin from 4 to 24 (The sensor is 
 
 # IoT weekly report 12
 
-[2020-11-23] Worked on my final projcet with the start of reviewing others' projects. Then I decided to use DS18B20 temperature sensor and STM32F103C8T6 microcontroller as my hardware to finish my project. I used to use them in my school and I could get them easily, but now it's hard for me to get them because of graduation. I'm still working on renting them, if could not, I will buy them. Once I get the equipment, I'll complete the code and handle the project.
+[2020-11-23] Worked on my final project with the start of reviewing others' projects. Then I decided to use DS18B20 temperature sensor and STM32F103C8T6 microcontroller as my hardware to finish my project. I used to use them in my school and I could get them easily, but now it's hard for me to get them because of graduation. I'm still working on renting them, if could not, I will buy them. Once I get the equipment, I'll complete the code and handle the project.
 
 
 # IoT weekly report 11
