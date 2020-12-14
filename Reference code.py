@@ -1,3 +1,7 @@
+# Code source:https://blog.csdn.net/iamfrankjie/article/details/100985182?ops_request_misc=%257B%2522request%255Fid%2522%253A%2522160794430419724838529120%2522%252C%2522scm%2522%253A%252220140713.130102334..%2522%257D&request_id=160794430419724838529120&biz_id=0&utm_medium=distribute.pc_search_result.none-task-blog-2~all~top_click~default-2-100985182.nonecase&utm_term=%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E4%BA%BA%E8%84%B8%E8%AF%86%E5%88%AB&spm=1018.2118.3001.4449
+# https://blog.csdn.net/yan_dk/article/details/89944650?ops_request_misc=%257B%2522request%255Fid%2522%253A%2522160793126716780288244073%2522%252C%2522scm%2522%253A%252220140713.130102334..%2522%257D&request_id=160793126716780288244073&biz_id=0&utm_medium=distribute.pc_search_result.none-task-blog-2~all~top_click~default-1-89944650.nonecase&utm_term=python%E4%BA%BA%E8%84%B8%E8%AF%86%E5%88%AB&spm=1018.2118.3001.4449
+# https://blog.csdn.net/yan_dk/article/details/89528463
+
 # Import module
 import cv2 as cv
 # Read image
